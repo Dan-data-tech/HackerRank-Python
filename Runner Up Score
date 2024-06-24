@@ -1,0 +1,9 @@
+n = int(input())
+arr = map(int, input().split())
+from math import *
+arr=list(arr)
+maxi=max(arr)
+count = arr.count(maxi)
+for i in range (count):
+  arr.remove(maxi)
+print(max(arr))
