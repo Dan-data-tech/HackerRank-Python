@@ -1,0 +1,8 @@
+x = int(input())
+y = int(input())
+z = int(input())
+n = int(input())
+ichoice= [i for i in range(x+1)]
+jchoice= [j for j in range(y+1)]
+kchoice= [k for k in range(z+1)]
+print([[i,j,k] for i in ichoice for j in jchoice for k in kchoice if i+j+k != n])
